@@ -1,0 +1,23 @@
+CREATE TABLE `book` (
+  `ID` int(11) NOT NULL,
+  `BRIEF` varchar(50) DEFAULT NULL,
+  `PUBLISH_YEAR` int(11) DEFAULT NULL,
+  `AUTHOR` varchar(255) CHARACTER SET utf8mb4 DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `employee` (
+  `ID` int(11) NOT NULL,
+  `NAME` varchar(255) DEFAULT NULL,
+  `DATE_OF_BIRTH` date DEFAULT NULL,
+  `EMAIL` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `employee_book` (
+  `book_id` int(11) NOT NULL,
+  `employee_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8;
+
